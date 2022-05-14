@@ -94,7 +94,7 @@ class CounterPage extends ConsumerWidget {
         actions: [
           IconButton(
               onPressed: () {
-                ref.refresh(counterProvider);
+                ref.refresh(counterProvider(5));
               },
               icon: const Icon(Icons.refresh)),
         ],
